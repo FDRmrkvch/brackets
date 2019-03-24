@@ -8,8 +8,7 @@ module.exports = function check(str, bracketsConfig) {
         }
       } else {
         if (str[i] == bracketsConfig[j][0]) {
-          arr.push(bracketsConfig[j][0]);
-          break;
+         
         }
         if (str[i] == bracketsConfig[j][1]) {
           if ((arr.length == 0) || (arr[arr.length - 1] != bracketsConfig[j][0])) return false;
